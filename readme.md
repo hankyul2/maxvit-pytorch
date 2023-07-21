@@ -41,7 +41,7 @@ This repo contains the unofficial PyTorch-version MaxViT model, training, and va
 | Model            | Image size | #Param | FLOPs | Top1  | Artifacts                                                    |
 | ---------------- | ---------- | ------ | ----- | ----- | ------------------------------------------------------------ |
 | MaxViT-T (paper) | 224        | 31M    | 5.6G  | 83.62 |                                                              |
-| MaxViT-T (repo)  | 224        | 31M    | 5.6G  | 83.82 | [[yaml]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.yaml), [[ckpt]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.pth.tar), [[log]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.log), [[csv]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.csv) |
+| MaxViT-T (ours)  | 224        | 31M    | 5.6G  | 83.82 | [[yaml]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.yaml), [[ckpt]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.pth.tar), [[log]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.log), [[csv]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.csv) |
 
 <img src="https://github.com/hankyul2/maxvit-pytorch/assets/31476895/323d3ff9-b602-47ef-b1fb-75469335bba7" width="800" height="616">
 
