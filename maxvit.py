@@ -1119,7 +1119,8 @@ def _cfg(url='', **kwargs):
 default_cfgs = generate_default_cfgs({
     # MaxViT models ported from official Tensorflow impl
     'maxvit_tiny_tf_224.in1k': _cfg(
-        hf_hub_id='timm/',
+        # hf_hub_id='timm/',
+        url="https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.pth.tar",
         mean=IMAGENET_DEFAULT_MEAN, std=IMAGENET_DEFAULT_STD),
     'maxvit_tiny_tf_384.in1k': _cfg(
         hf_hub_id='timm/',
