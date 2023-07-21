@@ -1,37 +1,7 @@
-""" MaxVit and CoAtNet Vision Transformer - CNN Hybrids in PyTorch
-
-This is a from-scratch implementation of both CoAtNet and MaxVit in PyTorch.
-
-99% of the implementation was done from papers, however last minute some adjustments were made
-based on the (as yet unfinished?) public code release https://github.com/google-research/maxvit
-
-There are multiple sets of models defined for both architectures. Typically, names with a
- `_rw` suffix are my own original configs prior to referencing https://github.com/google-research/maxvit.
-These configs work well and appear to be a bit faster / lower resource than the paper.
-
-The models without extra prefix / suffix' (coatnet_0_224, maxvit_tiny_224, etc), are intended to
-match paper, BUT, without any official pretrained weights it's difficult to confirm a 100% match.
-
-Papers:
-
-MaxViT: Multi-Axis Vision Transformer - https://arxiv.org/abs/2204.01697
-@article{tu2022maxvit,
-  title={MaxViT: Multi-Axis Vision Transformer},
-  author={Tu, Zhengzhong and Talebi, Hossein and Zhang, Han and Yang, Feng and Milanfar, Peyman and Bovik, Alan and Li, Yinxiao},
-  journal={ECCV},
-  year={2022},
-}
-
-CoAtNet: Marrying Convolution and Attention for All Data Sizes - https://arxiv.org/abs/2106.04803
-@article{DBLP:journals/corr/abs-2106-04803,
-  author    = {Zihang Dai and Hanxiao Liu and Quoc V. Le and Mingxing Tan},
-  title     = {CoAtNet: Marrying Convolution and Attention for All Data Sizes},
-  journal   = {CoRR},
-  volume    = {abs/2106.04803},
-  year      = {2021}
-}
-
-Hacked together by / Copyright 2022, Ross Wightman
+"""
+* Every right to Ross Wightman.
+* This is copeid from https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/maxxvit.py
+* We just remove the unnecessary coatnet related configuration.
 """
 
 import math
