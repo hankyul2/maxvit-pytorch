@@ -929,5 +929,5 @@ if __name__ == '__main__':
     args, args_text = _parse_args()
     args.local_rank = int(os.environ.get('LOCAL_RANK', 0))
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-    os.environ["CUDA_VISIBLE_DEVICES"] = '0,1,4,7'
+    # os.environ["CUDA_VISIBLE_DEVICES"] = '0,1,4,7'
     run(args, args_text)
