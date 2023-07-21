@@ -18,7 +18,7 @@ This repo contains the unofficial PyTorch-version MaxViT model, training, and va
    cd maxvit-pytorch
    ```
 
-2. Run the following command to train MaxViT-T in imagenet-1k dataset. For model variants, just change the `--drop-path` to `0.3 (small)` and `0.4 (base)`. For training with 4 GPUs, we use the gradient accumulation of `16 = 4096 (total batch size) / 256 (train batch size)`.
+2. Run the following command to train MaxViT-T in imagenet-1k dataset. For model variants, just change the `--drop-path` to `0.3 (small)` and `0.4 (base)`. For training with 4 GPUs, we use the gradient accumulation of `16 = 4096 (paper's total batch) / 256 (my total batch)`.
 
     Training time: about 5 days for the `maxvit_tiny_tf_224` model with 4 GPUs (RTX 3090, 24GB).
     
