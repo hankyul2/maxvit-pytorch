@@ -1,6 +1,6 @@
 # MaxViT (PyTorch version)
 
-This repo contains the unofficial PyTorch-version MaxViT model, training, and validation codes. This repo is written to share the PyTorch-version training hyper-parameters of MaxViT. For this, we just copy-and-paste the training hyper-parameters shown in [table 12 of the original paper](https://arxiv.org/pdf/2204.01697.pdf) with the modification of the number GPUs (we use 4 GPUs). Since most codes including model, train, and valid are copy-pasted from [Timm github](https://github.com/huggingface/pytorch-image-models), the credits should be given to [@rwightman](https://github.com/rwightman) and the original authors. See also their repos:
+This repo contains the unofficial PyTorch-version MaxViT model, training, and validation codes. This repo is written to share the PyTorch-version training hyper-parameters of MaxViT. For this, we just copy-and-paste the training hyper-parameters shown in [table 12 of the original paper](https://arxiv.org/pdf/2204.01697.pdf) with the modification of the number of GPUs (we use 4 GPUs). Since most codes including model, train, and valid are copy-pasted from [Timm github](https://github.com/huggingface/pytorch-image-models), the credits should be given to [@rwightman](https://github.com/rwightman) and the original authors. See also their repos:
 
 - [tensorflow-version maxvit by authors](https://github.com/google-research/maxvit).
 - [pytorch-version maxvit by timm](https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/maxxvit.py).
