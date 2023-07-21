@@ -18,7 +18,7 @@ This repo contains the unofficial PyTorch-version MaxViT model, training, and va
    cd maxvit-pytorch
    ```
 
-2. Run the following command to train MaxViT-T in imagenet-1k dataset. For model variants, just change the `--drop-path` to `0.3 (small)` and `0.4 (base)`. 
+2. Run the following command to train MaxViT-T in imagenet-1k dataset. For model variants, just change the `--drop-path` to `0.3 (small)` and `0.4 (base)`. For training with 4 GPUs, we use the gradient accumulation of `16 = 4096 (total batch size) / 256 (train batch size)`.
 
     Training time: about 5 days for the `maxvit_tiny_tf_224` model with 4 GPUs (RTX 3090, 24GB).
     
@@ -38,10 +38,10 @@ This repo contains the unofficial PyTorch-version MaxViT model, training, and va
 
 ## Experiment result
 
-| Model                | Image size | #Param | FLOPs | Top1  | Artifacts                                                    |
-| -------------------- | ---------- | ------ | ----- | ----- | ------------------------------------------------------------ |
-| MaxViT-T (paper)     | 224        | 31M    | 5.6G  | 83.62 |                                                              |
-| MaxViT-T (this repo) | 224        | 31M    | 5.6G  | 83.82 | [[args.yaml]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.yaml), [[ckpt.pth.tar]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.pth.tar), [[train.log]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.log), [[metric.csv]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.csv) |
+| Model            | Image size | #Param | FLOPs | Top1  | Artifacts                                                    |
+| ---------------- | ---------- | ------ | ----- | ----- | ------------------------------------------------------------ |
+| MaxViT-T (paper) | 224        | 31M    | 5.6G  | 83.62 |                                                              |
+| MaxViT-T (repo)  | 224        | 31M    | 5.6G  | 83.82 | [[yaml]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.yaml), [[ckpt]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.pth.tar), [[log]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.log), [[csv]](https://github.com/hankyul2/maxvit-pytorch/releases/download/v0.0.1/maxvit-tiny-tf-224.csv) |
 
 <img src="https://github.com/hankyul2/maxvit-pytorch/assets/31476895/323d3ff9-b602-47ef-b1fb-75469335bba7" width="800" height="616">
 
